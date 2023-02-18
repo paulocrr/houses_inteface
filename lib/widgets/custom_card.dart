@@ -38,10 +38,7 @@ class CustomCard extends StatelessWidget {
                 children: [
                   const Text(
                     'Minimalist House',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(width: 64),
                   Row(
@@ -63,56 +60,48 @@ class CustomCard extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
-              child: Row(
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: const [
-                          Text(
-                            '\$734',
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.blue,
-                              fontWeight: FontWeight.bold,
-                            ),
+            Row(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: const [
+                        Text(
+                          '\$734',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
                           ),
-                          Text('/month')
-                        ],
-                      ),
-                      Row(
-                        children: const [
-                          Icon(
-                            Icons.place,
-                            size: 16,
-                          ),
-                          Text(
-                            'San Isidro, Lima',
-                            style: TextStyle(color: Colors.grey),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                  const SizedBox(width: 64),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8),
+                        ),
+                        Text('/month')
+                      ],
                     ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.bookmark,
-                        color: Colors.grey,
-                      ),
-                    ),
+                    const SizedBox(height: 16),
+                    Row(
+                      children: const [
+                        Icon(Icons.place, size: 16),
+                        Text(
+                          'San Isidro, Lima',
+                          style: TextStyle(color: Colors.grey),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+                const SizedBox(width: 64),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                ],
-              ),
+                  child: IconButton(
+                    icon: const Icon(Icons.bookmark, color: Colors.grey),
+                    onPressed: () {},
+                  ),
+                ),
+              ],
             )
           ],
         ),

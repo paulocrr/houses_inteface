@@ -47,12 +47,13 @@ class CustomSmallCard extends StatelessWidget {
                     Text('4.5')
                   ],
                 ),
+                const SizedBox(height: 8),
                 Row(
                   children: const [
                     Icon(
                       Icons.place,
                       color: Colors.grey,
-                      size: 8,
+                      size: 16,
                     ),
                     Text('San Isidro, Lima')
                   ],
