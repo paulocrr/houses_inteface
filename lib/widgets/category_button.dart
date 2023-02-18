@@ -13,6 +13,9 @@ class CategoryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8.0),
+      ),
       color: const Color(0xffECE8E8),
       elevation: 0,
       child: Padding(

@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:houses_inteface/widgets/custom_card.dart';
+import 'package:houses_inteface/widgets/custom_small_card.dart';
 
-class Recommendation extends StatelessWidget {
-  const Recommendation({
-    super.key,
-  });
+class AdditionalRecommendation extends StatelessWidget {
+  const AdditionalRecommendation({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +15,11 @@ class Recommendation extends StatelessWidget {
             'Recommendation',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: const [
-                CustomCard(),
-                CustomCard(),
-              ],
-            ),
+          Column(
+            children: const [
+              CustomSmallCard(),
+              CustomSmallCard(),
+            ],
           )
         ],
       ),
